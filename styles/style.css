@@ -27,7 +27,7 @@ a:hover{
 }
 hr {
   border: none;
-  border-bottom: 1.8px solid #02537d;
+  border-bottom: 1.8px solid red;
   width: 7rem;
   margin: 1rem 0;
 }
