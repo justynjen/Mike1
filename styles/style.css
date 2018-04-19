@@ -202,14 +202,14 @@ textarea {
   line-height: 150%;
   resize:vertical;
   border-radius: 5px;
-  border:2px solid red;
+  border:2px solid #AF212B;
   margin-bottom: 15px;
 }
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 90%;
-  background:red;
+  background:#AF212B;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -221,7 +221,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:red; }
+[type="submit"]:hover { background:#AF212B; }
 /*
   ***FOOTER***
 */
