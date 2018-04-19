@@ -184,7 +184,7 @@ input {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #02537dcf;
+  border:2px solid red;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -202,14 +202,14 @@ textarea {
   line-height: 150%;
   resize:vertical;
   border-radius: 5px;
-  border:2px solid #02537dcf;
+  border:2px solid red;
   margin-bottom: 15px;
 }
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 90%;
-  background:#02537dcf;
+  background:red;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -221,7 +221,7 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#02537d; }
+[type="submit"]:hover { background:red; }
 /*
   ***FOOTER***
 */
