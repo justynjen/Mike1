@@ -23,7 +23,7 @@ a {
   font-size: 1rem;
 }
 a:hover{
-  color:#02537dcf;
+  color:red;
 }
 hr {
   border: none;
