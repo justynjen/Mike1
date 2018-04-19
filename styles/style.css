@@ -23,11 +23,11 @@ a {
   font-size: 1rem;
 }
 a:hover{
-  color:red;
+  color:#AF212B;
 }
 hr {
   border: none;
-  border-bottom: 1.8px solid red;
+  border-bottom: 1.8px solid #AF212B;
   width: 7rem;
   margin: 1rem 0;
 }
