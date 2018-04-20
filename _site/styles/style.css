@@ -130,6 +130,56 @@ nav a{
 /*
   ***ABOUT PAGE***
 */
+.owl-carousel .owl-item img{
+	width: 45%;
+	display: inline;
+}
+.owl-carousel{
+  text-align: center;
+  background-color: white;
+}
+.owl-next,
+.owl-prev{
+  display: inline-block;
+  padding: 25px;
+  text-align: center;
+  background-color: white;
+}
+.owl-prev{
+	display: flex;
+  position: absolute;
+  bottom: 180px;
+  left: 20px;
+}
+.owl-next{
+	display: flex;
+  position: absolute;
+  bottom: 180px;
+  right: 20px;
+}
+.owl-next,
+.owl-prev{
+  display: inline-block;
+  padding: 25px;
+}
+.owl-prev:after,
+.owl-next:after{
+  content: "\f190";
+  font-family: 'fontawesome';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+	color: rgba(90, 69, 44, 1);
+	font-size: 70px;
+ }
+ .owl-next:after{
+   content: "\f18e";
+ }
+.stateCarousel{
+	min-height: 70vh;
+	border-top: 1px solid rgba(171, 176, 178, 0.32);
+	border-bottom: 1px solid rgba(171, 176, 178, 0.32);
+}
 .polygraphs{
   background-color: #4b799ed9;
 }
