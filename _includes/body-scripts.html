@@ -1,5 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/owlcarousel/owl.carousel.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script>
 
 $( document ).ready(function() {
@@ -8,16 +9,33 @@ $( document ).ready(function() {
      $(".hamburger-menu").slideToggle();
    });
 });
-// Activate Carousel
-$("#myCarousel").carousel();
+function issueInstructions() {
 
-// Enable Carousel Indicators
-$(".item").click(function(){
-    $("#myCarousel").carousel(1);
-});
-
-// Enable Carousel Controls
-$(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-});
+  $(".hamburger-button").click(toggleMenu);
+  rotateCarousel();
+}
+</script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+  });
 </script>

@@ -11,8 +11,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css" rel="stylesheet" >
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-<link rel="stylesheet" href="/owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="/owlcarousel/owl.theme.default.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="/styles/style.css" rel="stylesheet">
 
@@ -85,20 +85,19 @@
     <p class="aboutP">Mike Anderson is a highly experienced polygraph examiner who retired from the FBI after almost 28 years of service. During his time in the FBI, Mr. Anderson served in Houston, Texas (1989-1991); San Juan, Puerto Rico (1991-1996); and Salt Lake City, Utah (1996-2016). During his tenure in Salt Lake City Mr. Anderson had oversight for all FBI operations which occurred in 17 of Utah's 29 counties. (2001-2006). Beginning in 2007 and continuing until his retirement Mr. Anderson served as the program manager for the FBI polygraph unit for the Salt Lake City Division where he was responsible for conducting all FBI polygraphs throughout the states of Utah and Idaho. He was also frequently called upon to conduct polygraph examinations from coast to coast, and from Alaska to Central America. Mr. Anderson is fluent in Spanish and is also licensed as a Utah State Private Investigator.</p>
   </div>
 </section>
-<!--STATES CAROUSEL-->
-<section class="stateCarousel grid-middle">
-	<h2 class="headingPadding">Have We Been To Your State</h2>
-<div class="owl-carousel">
-<div class="item">
-	<img class="bg"src="/images/award.jpg" alt="Utah">
-	<a href="/category/utah"> <h4>Utah</h4> </a>
+<!-- CAROUSEL-->
+<!-- Set up your HTML -->
+<div class="owl-carousel owl-theme">
+    <picture>
+        <source class="owl-lazy" media="(min-width: 850px)" data-srcset="/images/helicopter.jpg">
+        <source class="owl-lazy" media="(min-width: 550px)" data-srcset="/images/helicopter.jpg">
+        <img class="owl-lazy" data-src="/images/helicopter.jpg" alt="">
+    </picture>
+    <img class="owl-lazy" data-src="/images/helicopter.jpg" alt="">
+    <img class="owl-lazy" data-src="/images/helicopter.jpg" alt="">
+    <img class="owl-lazy" data-src="/images/helicopter.jpg" alt="">
+    <img class="owl-lazy" data-src="/images/helicopter.jpg" alt="">
 </div>
-<div class="item">
-	<img class="bg"src="/images/award.jpg" alt="Nevada">
-	<a href="/category/nevada"> <h4>Nevada</h4></a>
-</div>
-</div>
-</section>
 <section class="grid-middle imageSection">
   <div class="col-6_xs-12">
     <img class="bg"src="/images/helicopter.jpg" alt="">
@@ -137,7 +136,8 @@
 </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/owlcarousel/owl.carousel.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 <script>
 
 $( document ).ready(function() {
@@ -146,18 +146,35 @@ $( document ).ready(function() {
      $(".hamburger-menu").slideToggle();
    });
 });
-// Activate Carousel
-$("#myCarousel").carousel();
+function issueInstructions() {
 
-// Enable Carousel Indicators
-$(".item").click(function(){
-    $("#myCarousel").carousel(1);
-});
-
-// Enable Carousel Controls
-$(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-});
+  $(".hamburger-button").click(toggleMenu);
+  rotateCarousel();
+}
+</script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+  });
 </script>
 
 
