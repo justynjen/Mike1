@@ -149,7 +149,7 @@ nav a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding:70px;
+  padding:0 50px 0 50px;
 }
 .bg2{
   transform: rotate(180deg);
