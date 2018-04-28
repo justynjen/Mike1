@@ -58,8 +58,8 @@ header{
   /*border-bottom: 1px solid grey;*/
 }
 nav a{
-  padding: 0 5px 0 5px;
-  font-size: 15px;
+  padding: 0 42px 0 42px;
+  font-size: 25px;
   font-family: 'Open Sans';
 }
 nav img{
@@ -85,7 +85,7 @@ nav img{
 }
 .underline{
   text-decoration: underline;
-  color:  #02537d;
+  color:  black;
 }
 /*
   *** HEADER STYLES ***
@@ -94,7 +94,7 @@ header{
   padding: 1.2%;
 }
 nav a{
-  padding: 0 12px 0 12px;
+  padding: 0 45px 0 45px;
 }
 /*
   ***HOME PAGE***
@@ -130,58 +130,11 @@ nav a{
 /*
   ***ABOUT PAGE***
 */
-.owl-carousel .owl-item img{
-	width: 45%;
-	display: inline;
-}
-.owl-carousel{
-  text-align: center;
-  background-color: white;
-}
-.owl-next,
-.owl-prev{
-  display: inline-block;
-  padding: 25px;
-  text-align: center;
-  background-color: white;
-}
-.owl-prev{
-	display: flex;
-  position: absolute;
-  bottom: 180px;
-  left: 20px;
-}
-.owl-next{
-	display: flex;
-  position: absolute;
-  bottom: 180px;
-  right: 20px;
-}
-.owl-next,
-.owl-prev{
-  display: inline-block;
-  padding: 25px;
-}
-.owl-prev:after,
-.owl-next:after{
-  content: "\f190";
-  font-family: 'fontawesome';
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-	color: rgba(90, 69, 44, 1);
-	font-size: 70px;
- }
- .owl-next:after{
-   content: "\f18e";
- }
-.stateCarousel{
-	min-height: 70vh;
-	border-top: 1px solid rgba(171, 176, 178, 0.32);
-	border-bottom: 1px solid rgba(171, 176, 178, 0.32);
-}
 .polygraphs{
   background-color: #4b799ed9;
+}
+.polygraphSection{
+  padding: 5%;
 }
 .aboutImage{
   transform: rotate(180deg);
@@ -204,7 +157,13 @@ nav a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
+  padding: 30px;
+}
+.bgCarousel{
+  transform: rotate(270deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bgMobile{
   transform: rotate(180deg);
@@ -283,6 +242,12 @@ footer{
 .footerP{
   font-size: 18px;
   padding: 12px;
+}
+footer nav a{
+  font-size: 20px;
+}
+footer h4{
+  font-size: 35px;
 }
 .sub-footer {
   background-color: #35353f;
